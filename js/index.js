@@ -19,3 +19,7 @@ else {
 }
 
 
+// Iteration 3: Loops
+const nameChanged = hacker1.split('').map(letter => letter.toUpperCase()).join(" ")
+
+console.log(nameChanged)
