@@ -23,3 +23,16 @@ else {
 const nameChanged = hacker1.split('').map(letter => letter.toUpperCase()).join(" ")
 
 console.log(nameChanged)
+
+let reverseName = hacker2.split("").reverse().join("");
+console.log(reverseName);
+
+if(hacker1.localeCompare(hacker2)) {
+    console.log("The driver's name goes first.")
+}
+else if(hacker2.localeCompare(hacker1)) {
+    console.log("Yo, the navigator goes first definitely.");
+}
+else {
+    console.log("What?! You both have the same name?");
+}
