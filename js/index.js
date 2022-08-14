@@ -58,3 +58,19 @@ function countEt(text) {
   console.log(count);
   }
   countEt(paraf)
+
+  
+  // Bonus 2
+
+  const phraseToCheck = "A man, a plan, a canal, Panama!";
+
+  function checkIfPalindrome(str) {
+    const cleanPhrase = str.replaceAll(' ', '').replaceAll(',', '').replaceAll('.', '').replaceAll('!', '').replaceAll('?', '').toLowerCase();
+    const reversePhrase = cleanPhrase.split('').reverse().join('');
+    if(cleanPhrase === reversePhrase) {
+        console.log("This is a palindrome phrase")
+    }
+    else {console.log("This is not a special syntax")}
+  }
+
+  checkIfPalindrome(phraseToCheck)
